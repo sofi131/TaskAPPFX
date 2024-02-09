@@ -1,4 +1,4 @@
-package com.ceica.Models;
+package com.ceica.taskappfx.models;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;

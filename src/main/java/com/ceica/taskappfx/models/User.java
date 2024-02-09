@@ -1,4 +1,4 @@
-package com.ceica.Models;
+package com.ceica.taskappfx.models;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

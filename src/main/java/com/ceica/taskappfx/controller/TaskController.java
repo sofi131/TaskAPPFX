@@ -1,6 +1,6 @@
-package com.ceica.Controllers;
-import com.ceica.Models.Task;
-import com.ceica.Models.User;
+package com.ceica.taskappfx.controller;
+import com.ceica.taskappfx.models.Task;
+import com.ceica.taskappfx.models.User;
 
 import java.time.LocalDate;
 import java.util.List;

@@ -1,7 +1,4 @@
-package com.ceica.Models;
-
-import java.sql.ResultSet;
-import java.sql.SQLException;
+package com.ceica.taskappfx.models;
 
 public class Rol extends ModeloBase {
     private int idrol;
