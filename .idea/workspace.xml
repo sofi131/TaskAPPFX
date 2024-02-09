@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea9907ae-7190-47c9-b377-face121efb3b" name="Changes" comment="Añadimos varias clases y hacemos la vista de login.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/ceica/taskappfx/admin-view.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/ceica/taskappfx/user-view.fxml" afterDir="false" />
+    <list default="true" id="ea9907ae-7190-47c9-b377-face121efb3b" name="Changes" comment="iControllerView">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controller/TaskController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/LoginController.java" afterDir="false" />
@@ -23,6 +19,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -101,11 +98,29 @@
       <option name="project" value="LOCAL" />
       <updated>1707496489687</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Vistas admin y user.">
+      <option name="closed" value="true" />
+      <created>1707503201948</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707503201948</updated>
+    </task>
+    <task id="LOCAL-00003" summary="iControllerView">
+      <option name="closed" value="true" />
+      <created>1707504216267</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707504216267</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Añadimos varias clases y hacemos la vista de login." />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadimos varias clases y hacemos la vista de login." />
+    <MESSAGE value="Vistas admin y user." />
+    <MESSAGE value="iControllerView" />
+    <option name="LAST_COMMIT_MESSAGE" value="iControllerView" />
   </component>
 </project>

@@ -1,7 +1,4 @@
 package com.ceica.taskappfx.controller;
-
-
-
 import com.ceica.taskappfx.models.Task;
 import com.ceica.taskappfx.models.User;
 

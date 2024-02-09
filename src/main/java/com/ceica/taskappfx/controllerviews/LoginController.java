@@ -51,8 +51,6 @@ public class LoginController {
                 Node source = (Node) actionEvent.getSource();
                 Stage stage1 = (Stage) source.getScene().getWindow();
                 stage1.close();
-
-
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
