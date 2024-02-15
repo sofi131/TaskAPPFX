@@ -7,8 +7,10 @@ import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.util.StringConverter;
 
 import java.util.List;
 
@@ -37,6 +39,10 @@ public class AdminController extends ControllerView /*implements iControllerView
     protected PasswordField txtRePassword;
     @FXML
     protected ComboBox<Rol> comboRol;
+    //btn añadir
+    @FXML
+    protected Label lblMsg;
+
     //lista observable
     private ObservableList<User> observableList = FXCollections.observableArrayList();
     //esto es por el tableview, que hay que hacerlo así
@@ -48,6 +54,20 @@ public class AdminController extends ControllerView /*implements iControllerView
         //tblUser.setItems(observableList);
 
         //comboRol.getItems().addAll();
+        //autogenera el código
+        //clase abstracta
+        //esto solo muestra NO RECIBE
+        comboRol.setConverter(new StringConverter<Rol>() {
+            @Override
+            public String toString(Rol rol) {
+                return rol.getDescription();
+            }
+
+            @Override
+            public Rol fromString(String s) {
+                return null;
+            }
+        });
     }
 //contructor
     public AdminController() {
@@ -64,4 +84,18 @@ public class AdminController extends ControllerView /*implements iControllerView
         List<Rol> rolList=taskController.getRol();
         comboRol.getItems().addAll(rolList);
     }
-}
+//método a partir del admin view
+    public void btnAddUser(ActionEvent actionEvent) {
+        if (txtPassword.getText().equals(txtRePassword.getText())) {
+            taskController.createUser(txtUsername.getText(),
+                    txtPassword.getText(),
+                    comboRol.getSelectionModel().getSelectedItem().getIdrol());
+            //cargaInicial();
+//            observableList.removeAll(userList),
+//            observableList.addAll(userList),
+            tblUsers.refresh();
+        }else{
+                lblMsg.setText("Password must be equals");
+            }
+        }
+    }

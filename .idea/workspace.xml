@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea9907ae-7190-47c9-b377-face121efb3b" name="Changes" comment="Arreglado un error (decía que una variable era null, pero estaba mal escrito).">
+    <list default="true" id="ea9907ae-7190-47c9-b377-face121efb3b" name="Changes" comment="Cargando los roles.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controller/TaskController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/models/Rol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/models/Rol.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/ceica/taskappfx/admin-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ceica/taskappfx/admin-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -161,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708020933369</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Cargando los roles.">
+      <option name="closed" value="true" />
+      <created>1708023023084</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708023023084</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -173,6 +179,7 @@
     <MESSAGE value="Cambios admin, user, login y ControllerView." />
     <MESSAGE value="Cambios en los controllers (y la view de admin y user.java)." />
     <MESSAGE value="Arreglado un error (decía que una variable era null, pero estaba mal escrito)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Arreglado un error (decía que una variable era null, pero estaba mal escrito)." />
+    <MESSAGE value="Cargando los roles." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cargando los roles." />
   </component>
 </project>
