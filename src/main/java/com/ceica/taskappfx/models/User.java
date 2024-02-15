@@ -89,7 +89,7 @@ public class User extends ModeloBase {
         //consulta contra la bd
         Connection conn = user.getConnection();
         String consulta = "select iduser,username,user.idrol,description " +
-                "from user inner join on rol user.idrol=rol.idrol";
+                "from user inner join rol on user.idrol=rol.idrol";
         try {
             Statement stm = conn.createStatement();
             ResultSet resultSet = stm.executeQuery(consulta);

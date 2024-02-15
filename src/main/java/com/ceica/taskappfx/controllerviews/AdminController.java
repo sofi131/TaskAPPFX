@@ -21,7 +21,7 @@ public class AdminController extends ControllerView /*implements iControllerView
     }*/
 
     @FXML
-    protected TableView<User> tblUser;
+    protected TableView<User> tblUsers;
     @FXML
     protected TableColumn<User, Integer> idColumn;
     @FXML
@@ -30,11 +30,12 @@ public class AdminController extends ControllerView /*implements iControllerView
     protected TableColumn<User, String> rolColumn;
     //lista observable
     private ObservableList<User> observableList = FXCollections.observableArrayList();
+    //esto es por el tableview, que hay que hacerlo así
     @FXML
     public void initialize(){
         idColumn.setCellValueFactory(cell -> new SimpleObjectProperty<>(cell.getValue().getIduser()));
-        userNameColumn.setCellValueFactory(cell -> new SimpleStringProperty(cell.getValue().getUsername()));
-        rolColumn.setCellValueFactory(cell -> new SimpleStringProperty(cell.getValue().getRol().getDescription()));
+        userNameColumn.setCellValueFactory(cell->new SimpleStringProperty(cell.getValue().getUsername()));
+        rolColumn.setCellValueFactory(cell->new SimpleStringProperty(cell.getValue().getRol().getDescription()));
         //tblUser.setItems(observableList);
     }
 //contructor
@@ -48,6 +49,6 @@ public class AdminController extends ControllerView /*implements iControllerView
     public void cargaInicial() {
         List<User> userList=taskController.getAllUser();
         observableList.addAll(userList);
-        tblUser.setItems(observableList);
+        tblUsers.setItems(observableList);
     }
 }
