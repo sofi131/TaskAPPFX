@@ -23,43 +23,46 @@ public class LoginController {
     @FXML
     protected Label lblMessage;
 
-    public TaskController taskController=new TaskController();
-
+    public TaskController taskController = new TaskController();
+//botón login
     public void btnLogin(ActionEvent actionEvent) {
-        if(taskController.login(txtUsername.getText(),txtPassword.getText())){
-            String view="";
+        if (taskController.login(txtUsername.getText(), txtPassword.getText())) {
+            String view = "";
             String titleWindow;
-            if(taskController.isAdmin()){
+            if (taskController.isAdmin()) {
                 //Mostrar vista administrador
-                view="admin-view.fxml";
+                view = "admin-view.fxml";
                 //título ventana
-                titleWindow="Admin";
-            }else{
+                titleWindow = "Admin";
+            } else {
                 //Mostrar vista usuario
-                view="user-view.fxml";
+                view = "user-view.fxml";
                 //título ventana
-                titleWindow="User";
+                titleWindow = "User";
             }
-            FXMLLoader fxmlLoader=new FXMLLoader(TaskApplication.class.getResource(view));
+            FXMLLoader fxmlLoader = new FXMLLoader(TaskApplication.class.getResource(view));
             try {
-                Parent root=fxmlLoader.load();
+                Parent root = fxmlLoader.load();
                 //para que ponga si es admin o usuario a partir de la interfaz
-                iControllerView controller =fxmlLoader.getController();
+                //Este es el que era antes
+                //iControllerView controller = fxmlLoader.getController();
+                //AdminController controller = fxmlLoader.getController();
+                //ESTE DE ABAJO
+                ControllerView controller = fxmlLoader.getController(); //esto ya no da error
                 controller.setTaskController(taskController);
-                Scene scene=new Scene(root);
-                Stage stage=new Stage();
+                Scene scene = new Scene(root);
+                Stage stage = new Stage();
                 stage.setTitle(titleWindow);
                 stage.setScene(scene);
                 stage.show();
-                Node source=(Node) actionEvent.getSource();
-                Stage stage1=(Stage) source.getScene().getWindow();
+                Node source = (Node) actionEvent.getSource();
+                Stage stage1 = (Stage) source.getScene().getWindow();
                 stage1.close();
-
 
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-        }else {
+        } else {
             lblMessage.setText("Incorrect User or Password");
         }
     }

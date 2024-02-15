@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea9907ae-7190-47c9-b377-face121efb3b" name="Changes" comment="últimos cambios">
+    <list default="true" id="ea9907ae-7190-47c9-b377-face121efb3b" name="Changes" comment="Cambios LoginController.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/ControllerView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/TaskApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/TaskApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/AdminController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/iControllerView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/iControllerView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,12 +19,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -46,21 +51,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TaskApplication.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lenovo/IdeaProjects/TaskAPPFX/src/main/resources/com/ceica/taskappfx&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Application.TaskApplication.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "abstract",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Lenovo/IdeaProjects/TaskAPPFX/src/main/resources/com/ceica/taskappfx",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Lenovo\IdeaProjects\TaskAPPFX\src\main\resources\com\ceica\taskappfx" />
@@ -123,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707507080915</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Cambios LoginController.">
+      <option name="closed" value="true" />
+      <created>1708009774471</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708009774471</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -131,6 +144,7 @@
     <MESSAGE value="Vistas admin y user." />
     <MESSAGE value="iControllerView" />
     <MESSAGE value="últimos cambios" />
-    <option name="LAST_COMMIT_MESSAGE" value="últimos cambios" />
+    <MESSAGE value="Cambios LoginController." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios LoginController." />
   </component>
 </project>

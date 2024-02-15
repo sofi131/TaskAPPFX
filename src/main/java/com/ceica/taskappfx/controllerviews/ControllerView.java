@@ -2,11 +2,12 @@ package com.ceica.taskappfx.controllerviews;
 
 import com.ceica.taskappfx.controller.TaskController;
 
-//public class AdminController implements iControllerView {
-public class AdminController extends ControllerView /*implements iControllerView*/ {
-    //private TaskController taskController;
-  /*  @Override
+public abstract class ControllerView {
+    //clase que van a heredar todos los controladores de vista
+    protected TaskController taskController;
+
     public void setTaskController(TaskController taskController) {
         this.taskController=taskController;
-    }*/
+    }
+
 }
