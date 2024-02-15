@@ -12,7 +12,7 @@ public class TaskApplication extends Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(TaskApplication.class.getResource("login-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
-        stage.setTitle("TareasApp");
+        stage.setTitle("TareasAppFX!");
         stage.setScene(scene);
         stage.show();
     }
