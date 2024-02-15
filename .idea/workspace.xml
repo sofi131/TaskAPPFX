@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea9907ae-7190-47c9-b377-face121efb3b" name="Changes" comment="Cambios en los controllers (y la view de admin y user.java).">
+    <list default="true" id="ea9907ae-7190-47c9-b377-face121efb3b" name="Changes" comment="Arreglado un error (decía que una variable era null, pero estaba mal escrito).">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controller/TaskController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/models/Rol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/models/Rol.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/ceica/taskappfx/admin-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ceica/taskappfx/admin-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708019698593</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Arreglado un error (decía que una variable era null, pero estaba mal escrito).">
+      <option name="closed" value="true" />
+      <created>1708020933369</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1708020933369</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -163,6 +172,7 @@
     <MESSAGE value="Cambios LoginController." />
     <MESSAGE value="Cambios admin, user, login y ControllerView." />
     <MESSAGE value="Cambios en los controllers (y la view de admin y user.java)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios en los controllers (y la view de admin y user.java)." />
+    <MESSAGE value="Arreglado un error (decía que una variable era null, pero estaba mal escrito)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Arreglado un error (decía que una variable era null, pero estaba mal escrito)." />
   </component>
 </project>

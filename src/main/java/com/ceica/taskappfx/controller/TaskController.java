@@ -1,4 +1,5 @@
 package com.ceica.taskappfx.controller;
+import com.ceica.taskappfx.models.Rol;
 import com.ceica.taskappfx.models.Task;
 import com.ceica.taskappfx.models.User;
 
@@ -56,5 +57,10 @@ public class TaskController {
     public List<User> getAllUser() {
         User user = new User();
         return user.getAll();
+    }
+//método de admin
+    public List<Rol> getRol() {
+        Rol rol=new Rol();
+        return rol.getAll();
     }
 }
