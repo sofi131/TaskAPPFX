@@ -52,4 +52,9 @@ public class TaskController {
     public static boolean isAdmin() {
         return userLogged.getRol().getIdrol()==2?true:false;
     }
+//creado de admin
+    public List<User> getAllUser() {
+        User user = new User();
+        return user.getAll();
+    }
 }

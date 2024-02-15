@@ -8,6 +8,9 @@ public abstract class ControllerView {
 
     public void setTaskController(TaskController taskController) {
         this.taskController=taskController;
+        //carga inicial de datos
+        cargaInicial();
     }
 
+    public abstract void cargaInicial();
 }

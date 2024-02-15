@@ -1,11 +1,10 @@
 package com.ceica.taskappfx.models;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
-public class User extends ModeloBase{
+public class User extends ModeloBase {
     private int iduser;
     private String username;
     private String password;
@@ -18,28 +17,20 @@ public class User extends ModeloBase{
         return iduser;
     }
 
-    public String getUsername() {
-        return username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public Rol getRol() {
-        return rol;
-    }
-
     public void setIduser(int iduser) {
         this.iduser = iduser;
+    }
+
+    public String getUsername() {
+        return username;
     }
 
     public void setUsername(String username) {
         this.username = username;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public Rol getRol() {
+        return rol;
     }
 
     public void setRol(Rol rol) {
@@ -63,33 +54,58 @@ public class User extends ModeloBase{
     }
 
     public User login(String username, String password) {
-        User user=new User();
-        Connection conn=user.getConnection();
-        String sql="select iduser,username,rol.idrol,description from " +
+        User user = new User();
+        Connection conn = user.getConnection();
+        String sql = "select iduser,username,rol.idrol,description from " +
                 "user left join rol on user.idrol=rol.idrol " +
                 "where username=? and password=?";
         try {
-            PreparedStatement pst=conn.prepareStatement(sql);
-            pst.setString(1,username);
-            pst.setString(2,password);
-            ResultSet resultSet=pst.executeQuery();
-            if(resultSet.next()){
-                user.iduser=resultSet.getInt("iduser");
-                user.username=resultSet.getString("username");
-                Rol rol=new Rol();
+            PreparedStatement pst = conn.prepareStatement(sql);
+            pst.setString(1, username);
+            pst.setString(2, password);
+            ResultSet resultSet = pst.executeQuery();
+            if (resultSet.next()) {
+                user.iduser = resultSet.getInt("iduser");
+                user.username = resultSet.getString("username");
+                Rol rol = new Rol();
                 rol.setIdrol(resultSet.getInt("idrol"));
                 rol.setDescription(resultSet.getString("description"));
-                user.rol=rol;
+                user.rol = rol;
                 return user;
-            }else {
+            } else {
                 return null;
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+    }
 
-
+    //de task
+    public List<User> getAll() {
+        //lista de usuarios vacía
+        List<User> userList = new ArrayList<>();
+        //obj user obtener la conn
+        User user = new User();
+        //consulta contra la bd
+        Connection conn = user.getConnection();
+        String consulta = "select iduser,username,user.idrol,description " +
+                "from user inner join on rol user.idrol=rol.idrol";
+        try {
+            Statement stm = conn.createStatement();
+            ResultSet resultSet = stm.executeQuery(consulta);
+            while (resultSet.next()) {
+                User user1 = new User();
+                user1.setIduser(resultSet.getInt("iduser"));
+                user1.setUsername(resultSet.getString("username"));
+                Rol rol1 = new Rol();
+                rol1.setIdrol(resultSet.getInt("user.idrol"));
+                rol1.setDescription(resultSet.getString("description"));
+                user1.setRol(rol1);
+                userList.add(user1);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return userList;
     }
 }
-
-
