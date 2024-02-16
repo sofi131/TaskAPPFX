@@ -74,17 +74,12 @@ public class AdminController extends ControllerView /*implements iControllerView
             }
         });
         //evento clic
-        tblUsers.setOnMouseClicked(e -> {
-            if (e.getClickCount() == 1) {
-                //esto me devuelve el usuario clicando
-                User user = tblUsers.getSelectionModel().getSelectedItem();
-                txtUsername.setText(user.getUsername());
-                //y esto me devuelve el rol
-                comboRol.setValue(user.getRol());
-                //visibilidad de los botones a la hora de clicar
-               btnAdd.setVisible(false);
-               btnUpdate.setVisible(true);
-            }
+        tblUsers.setOnMouseClicked(e->{
+            User user=tblUsers.getSelectionModel().getSelectedItem();
+            txtUsername.setText(user.getUsername());
+            comboRol.setValue(user.getRol());
+            btnAdd.setVisible(false);
+            btnUpdate.setVisible(true);
         });
 
     }
