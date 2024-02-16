@@ -28,7 +28,7 @@
                         </TableView>
                         <TextField fx:id="txtUsername" layoutX="363.0" layoutY="53.0" promptText="Username" />
                         <Button fx:id="btnAdd" layoutX="386.0" layoutY="233.0" mnemonicParsing="false" onAction="#btnAddUser" prefHeight="25.0" prefWidth="97.0" text="Add User" />
-                        <Button layoutX="386.0" layoutY="296.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Delete User" />
+                        <Button fx:id="btnDelete" layoutX="386.0" layoutY="296.0" mnemonicParsing="false" onAction="#btnDeleteUser" prefHeight="25.0" prefWidth="97.0" text="Delete User" />
                         <PasswordField fx:id="txtPassword" layoutX="363.0" layoutY="91.0" promptText="Password" />
                         <PasswordField fx:id="txtRePassword" layoutX="363.0" layoutY="129.0" promptText="Repit password" />
                         <ComboBox fx:id="comboRol" layoutX="363.0" layoutY="173.0" prefWidth="150.0" promptText="Roles" />

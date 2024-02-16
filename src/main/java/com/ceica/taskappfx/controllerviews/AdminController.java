@@ -136,4 +136,11 @@ public class AdminController extends ControllerView /*implements iControllerView
         btnAdd.setVisible(true);
         btnUpdate.setVisible(false);
     }
+//botón de eliminar
+    public void btnDeleteUser(ActionEvent actionEvent) {
+        User user=tblUsers.getSelectionModel().getSelectedItem();
+        observableList.remove(user);
+        tblUsers.refresh();
+       // btnCancelTask(null);
+    }
 }

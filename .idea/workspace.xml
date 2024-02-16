@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea9907ae-7190-47c9-b377-face121efb3b" name="Changes" comment="Añadiendo botones (actualizar).">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/ceica/taskappfx/admin-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ceica/taskappfx/admin-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708101981271</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Añadiendo botones (actualizar).">
+      <option name="closed" value="true" />
+      <created>1708104619029</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1708104619029</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
