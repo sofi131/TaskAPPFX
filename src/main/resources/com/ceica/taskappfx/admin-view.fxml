@@ -11,7 +11,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ceica.taskappfx.controllerviews.AdminController">
    <children>
       <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
@@ -28,12 +27,13 @@
                           </columns>
                         </TableView>
                         <TextField fx:id="txtUsername" layoutX="363.0" layoutY="53.0" promptText="Username" />
-                        <Button layoutX="386.0" layoutY="233.0" mnemonicParsing="false" onAction="#btnAddUser" prefHeight="25.0" prefWidth="97.0" text="Add User" />
+                        <Button fx:id="btnAdd" layoutX="386.0" layoutY="233.0" mnemonicParsing="false" onAction="#btnAddUser" prefHeight="25.0" prefWidth="97.0" text="Add User" />
                         <Button layoutX="386.0" layoutY="296.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="97.0" text="Delete User" />
                         <PasswordField fx:id="txtPassword" layoutX="363.0" layoutY="91.0" promptText="Password" />
                         <PasswordField fx:id="txtRePassword" layoutX="363.0" layoutY="129.0" promptText="Repit password" />
                         <ComboBox fx:id="comboRol" layoutX="363.0" layoutY="173.0" prefWidth="150.0" promptText="Roles" />
                         <Label fx:id="lblMsg" layoutX="334.0" layoutY="270.0" prefHeight="17.0" prefWidth="204.0" textFill="RED" />
+                        <Button fx:id="btnUpdate" layoutX="384.0" layoutY="233.0" mnemonicParsing="false" onAction="#btnUpdateUser" prefHeight="25.0" prefWidth="100.0" text="Update" visible="false" />
                      </children>
                   </AnchorPane>
             </content>
