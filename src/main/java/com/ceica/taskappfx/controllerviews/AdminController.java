@@ -90,9 +90,9 @@ public class AdminController extends ControllerView /*implements iControllerView
             taskController.createUser(txtUsername.getText(),
                     txtPassword.getText(),
                     comboRol.getSelectionModel().getSelectedItem().getIdrol());
-            //cargaInicial();
-//            observableList.removeAll(userList),
-//            observableList.addAll(userList),
+            List <User> userList=taskController.getAllUser();
+            observableList.clear();
+           observableList.addAll(userList);
             tblUsers.refresh();
         }else{
                 lblMsg.setText("Password must be equals");
