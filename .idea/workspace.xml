@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea9907ae-7190-47c9-b377-face121efb3b" name="Changes" comment="Añadiendo botones (actualizar).">
+    <list default="true" id="ea9907ae-7190-47c9-b377-face121efb3b" name="Changes" comment="Botón de borrar usuario.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controller/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controller/TaskController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/controllerviews/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/models/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ceica/taskappfx/models/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/ceica/taskappfx/admin-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/ceica/taskappfx/admin-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -198,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708104619029</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Botón de borrar usuario.">
+      <option name="closed" value="true" />
+      <created>1708105283229</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1708105283229</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -214,6 +225,7 @@
     <MESSAGE value="últimos cambios (1502)" />
     <MESSAGE value="Para refrescar en AdminController" />
     <MESSAGE value="Añadiendo botones (actualizar)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadiendo botones (actualizar)." />
+    <MESSAGE value="Botón de borrar usuario." />
+    <option name="LAST_COMMIT_MESSAGE" value="Botón de borrar usuario." />
   </component>
 </project>

@@ -1,5 +1,6 @@
 package com.ceica.taskappfx.models;
 import java.sql.*;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,6 +28,10 @@ public class Task extends ModeloBase {
         this.deadline = deadline;
         this.status = status;
     }
+//este lo crea para ver tasks
+//    public Task(int idtask, String title, String description, LocalDate createDate, LocalDate deadline, boolean status) {
+//        super();
+//    }
 
     //-----------------------------------------getter & setter-------------------------------
     public int getIdtask() {
@@ -125,24 +130,24 @@ public class Task extends ModeloBase {
     }
 
     //ver todas las tareas (admin) -- al ser Statement no lleva interrogante
-    public List<Task> getAll() {
-        List<Task> taskList = new ArrayList<>();
-        Task task1 = new Task();
-        Connection conn = task1.getConnection();
-        String sql = "SELECT idtask,title,T0.description,create_date,deadline,status,\n" +
-                "T1.iduser,username,T2.idrol,T2.description as rol \n" +
-                "from task T0 \n" +
-                "left join user T1 on T0.iduser=T1.iduser\n" +
-                "left join rol T2 on T1.idrol=T2.idrol";
-        try {
-            Statement st = conn.createStatement();
-            ResultSet resultSet = st.executeQuery(sql);
-            taskList = readResultSet(resultSet);
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        return taskList;
-    }
+//    public List<Task> getAll() {
+//        List<Task> taskList = new ArrayList<>();
+//        Task task1 = new Task();
+//        Connection conn = task1.getConnection();
+//        String sql = "SELECT idtask,title,T0.description,create_date,deadline,status,\n" +
+//                "T1.iduser,username,T2.idrol,T2.description as rol \n" +
+//                "from task T0 \n" +
+//                "left join user T1 on T0.iduser=T1.iduser\n" +
+//                "left join rol T2 on T1.idrol=T2.idrol";
+//        try {
+//            Statement st = conn.createStatement();
+//            ResultSet resultSet = st.executeQuery(sql);
+//            taskList = readResultSet(resultSet);
+//        } catch (SQLException e) {
+//            throw new RuntimeException(e);
+//        }
+//        return taskList;
+//    }
 
     //nueva table que resuelve las otras dos
     private List<Task> readResultSet(ResultSet resultSet) throws SQLException {
@@ -168,4 +173,21 @@ public class Task extends ModeloBase {
         return taskList;
     }
 
+    //getAllTask -------------------------------------------------> para ver las tasks
+    public List<Task> getAllTasks() {
+        List<Task> tasks = new ArrayList<>();
+        List<Task> taskList = new ArrayList<>();
+        Task task1 = new Task();
+        Connection conn = task1.getConnection();
+        String sql = "SELECT * FROM tasks";
+        try {
+            Statement st = conn.createStatement();
+            ResultSet resultSet = st.executeQuery(sql);
+            taskList = readResultSet(resultSet);
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return taskList;
+    }
 }
+

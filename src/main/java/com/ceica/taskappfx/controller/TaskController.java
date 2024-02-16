@@ -6,6 +6,7 @@ import com.ceica.taskappfx.models.User;
 import java.time.LocalDate;
 import java.util.List;
 
+
 public class TaskController {
     public static User userLogged;
 
@@ -40,9 +41,11 @@ public class TaskController {
         Task task=new Task();
         return task.getAllByUser(userLogged.getIduser());
     }
+    //aquí para visualizar la tabla ??????? --------------------- MIRAR ESTO
     public List<Task> getAllTask(){
         Task task=new Task();
-        return task.getAll();
+       return task.getAll();
+       // return task.getAll("(title,description,deadline,iduser) values (?,?,?,?)",title,description,date,deadline,userLogged.getIduser());
     }
     //completar task
     public boolean completeTask(int idtask){
@@ -63,8 +66,10 @@ public class TaskController {
         Rol rol=new Rol();
         return rol.getAll();
     }
-//consulta que queremos actualizar
-public boolean updateUser(User user) {
-    return user.actualizar("password=?,idrol=? where iduser=?",user.getPassword(),user.getRol().getIdrol(),user.getIduser());
-}
+
+    //consulta que queremos actualizar
+    public boolean updateUser(User user) {
+        return user.actualizar("password=?,idrol=? where iduser=?", user.getPassword(), user.getRol().getIdrol(), user.getIduser());
+    }
+
 }

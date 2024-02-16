@@ -16,11 +16,6 @@ import java.util.List;
 
 //public class AdminController implements iControllerView {
 public class AdminController extends ControllerView /*implements iControllerView*/ {
-    //private TaskController taskController;
-  /*  @Override
-    public void setTaskController(TaskController taskController) {
-        this.taskController=taskController;
-    }*/
 
     @FXML
     protected TableView<User> tblUsers;
